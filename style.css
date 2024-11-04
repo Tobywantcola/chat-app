@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  /* color */
+
+  --bg-violet: #BF40FF;
+  --bg-gray: #F9F4FA;
+  --headcolor: #3D2653;
+  --textcolor: #AFADB3;
+  --textviolet: #BF40FF;
+
+  /*font family */
+  --fontrubik: Rubik;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fontrubik);
+}
+
+/* background design ---------------------------------------- */
+body {
+  background: #FAFAFA;
+  width: 100%;
+  height: 100vh;
+}
+
+.violet-background {
+  position: absolute;
+  background: var(--bg-violet);
+  width: 320px;
+  height: 450px;
+  border-radius: 0 0 200px 200px;
+  margin-left: -15px;
+  z-index: -1;
+}
+
+.gray-background {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: var(--bg-gray);
+  width: 320px;
+  height: 450px;
+  border-radius: 200px 200px 0 0;
+  z-index: -1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* phone container  ------------------------------------------- */
+
+.phone {
+  width: 375px;
+  border: 10px solid white;
+  border-radius: 30px;
+  margin: 35px;
+  box-shadow: 0 0 30px gray;
+  scale: 80%;
+}
+
+.phone-front-cam {
+  right: 50%;
+  transform: translate(50%);
+  position: absolute;
+  background: white;
+  border-radius: 0 0 25px 25px;
+  width: 200px;
+  height: 30px;
+}
+
+/* Phone header  -------------------------------------------- */
+
+.phone-header {
+  border-radius: 19px 19px 0 0;
+  background: linear-gradient(to right, #953BFF, #DC43FF);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 10px 15px;
+}
+
+.phone-header a {
+  color: white;
+}
+
+.phone-header-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-header-profile img {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.phone-header-profile-name h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+}
+
+.phone-header-profile-name p {
+  color: var(--textcolor);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+/* Phone Article  -------------------------------------------- */
+
+.phone-article {
+  background: #F5F3F8;
+  padding: 15px;
+  height: 100%x;
+  border-radius: 0 0 20px 20px;
+}
+
+.phone-message1 {
+  width: 100%;
+}
+
+.phone-message1 h3 {
+  background: #EDE5F4;
+  border-radius: 5px;
+  padding: 8px 25px 8px 8px;
+  width: 150px;
+  margin-bottom: 15px;
+  color: var(--textviolet);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.phone-message2 {
+  width: 100%;
+}
+
+.phone-message2 h3 {
+  background: #EDE5F4;
+  border-radius: 5px;
+  padding: 8px 8px 8px 8px;
+  width: 170px;
+  margin-bottom: 15px;
+  color: var(--textviolet);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.phone-image-message {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.phone-image-message img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 8px;
+}
+
+.phone-message3 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.phone-message3 h3 {
+  color: #575757;
+  background: white;
+  border-radius: 5px;
+  padding: 8px 8px 8px 8px;
+  width: 170px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 0.8rem;
+
+}
+
+.phone-message4 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.phone-message4 h3 {
+  color: #575757;
+  background: white;
+  border-radius: 5px;
+  padding: 8px 8px 8px 8px;
+  width: fit-content;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.phone-message5 {
+  width: 100%;
+}
+
+.phone-message5 h3 {
+  background: #EDE5F4;
+  border-radius: 5px;
+  padding: 8px 8px 8px 8px;
+  width: 175px;
+  margin-bottom: 10px;
+  color: var(--textviolet);
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.phone-message-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to left, #953BFF, #DC43FF);
+  width: 220px;
+  margin: 10px 0;
+  padding: 17px;
+  border-radius: 15px;
+}
+
+.phone-message-checkbox h2 {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.phone-message-checkbox label {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+}
+
+.radio {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid hsl(289, 100%, 72%);
+  /* Set border to white */
+  border-radius: 50%;
+  /* Make it round */
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  /* Remove background */
+}
+
+.phone-message-checkbox input[type="radio"] {
+  display: none;
+}
+
+.phone-message-checkbox input[type="radio"]:checked+label::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  /* White inner dot */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.phone-message-box {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+  height: 45px;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+.phone-message-box input {
+  width: 80%;
+  height: 44px;
+  border: none;
+  margin-left: 20px;
+  outline: none;
+}
+
+.phone-message-box p {
+  font-size: 1rem;
+  padding: 8px 13px;
+  border-radius: 50%;
+  background: var(--headcolor);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.phone-message-box p:hover {
+  box-shadow: 0 0 5px var(--headcolor);
+  scale: 90%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px;
+  padding-bottom: 20px;
+}
+
+.details h1 {
+  font-size: 2.6rem;
+  color: var(--headcolor);
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.details p {
+  color: var(--textcolor);
+  font-weight: 400;
+  max-width: 315px;
+}
+
+@media only screen and (min-width:1024px) {
+  main {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+  .phone {
+    scale: 50%
+  }
+
+  .details {
+    text-align: start;
+  }
+
+  .details p {
+    font-size: 0.9rem;
+    max-width: 410px;
+  }
+
+  .violet-background {
+    position: absolute;
+    background: var(--bg-violet);
+    width: 420px;
+    height: 550px;
+    border-radius: 0 0 200px 200px;
+    margin-left: -15px;
+    z-index: -1;
+  }
+
+  .gray-background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: var(--bg-gray);
+    width: 420px;
+    height: 550px;
+    border-radius: 200px 200px 0 0;
+    z-index: -1;
+  }
+}
